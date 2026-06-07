@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PRODJET Waitlist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="phone-frame">
+
+    <div id="step1">
+
+        <h1>PRODJET</h1>
+
+        <h2>Join the PRODJET Waitlist</h2>
+
+        <p>Select User Type</p>
+
+        <div class="card" onclick="selectType('Student')">
+            🎓 Student
+        </div>
+
+        <div class="card" onclick="selectType('Brand')">
+            💼 Brand
+        </div>
+
+        <div class="card" onclick="selectType('College')">
+            🏫 College
+        </div>
+
+    </div>
+
+    <div id="step2" style="display:none;">
+
+        <h1>PRODJET</h1>
+
+        <h3 id="selectedType"></h3>
+
+        <form id="waitlistForm">
+
+            <input type="text" id="fullName" placeholder="Full Name">
+
+            <input type="email" id="email" placeholder="Email">
+
+            <input type="text" id="phone" placeholder="Phone Number">
+
+            <div id="dynamicFields"></div>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </div>
+
+    <div id="success" style="display:none;">
+
+        <div class="success-icon">✓</div>
+
+        <h2>Registration Complete!</h2>
+
+        <p>You are on the PRODJET waitlist.</p>
+
+        <div class="success-box">
+
+            <h3>Waitlist Number</h3>
+            <h1>#757</h1>
+
+            <h3>Referral Code</h3>
+            <h2>USR757</h2>
+
+            <p>Referral Link</p>
+            <p>prodjet.in/join?ref=USR757</p>
+
+            <p>Referrals Joined: 0/3</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
