@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PRODJET Conditional Waitlist Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>PRODJET Conditional Waitlist Form</h1>
+
+    <label>User Type</label>
+
+    <select id="userType" onchange="showFields()">
+        <option value="">Select User Type</option>
+        <option value="Student">Student</option>
+        <option value="Brand">Brand</option>
+        <option value="College">College</option>
+    </select>
+
+    <form id="waitlistForm">
+
+        <input type="text" id="fullName" placeholder="Full Name">
+
+        <input type="email" id="email" placeholder="Email">
+
+        <input type="text" id="phone" placeholder="Phone Number">
+
+        <div id="dynamicFields"></div>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</div>
+
+<div id="successScreen" class="success-screen">
+
+    <h1>Registration Complete!</h1>
+
+    <p>You are on the PRODJET waitlist.</p>
+
+    <h2>Waitlist Number: #757</h2>
+
+    <h2>Referral Code: USR757</h2>
+
+    <p>Referral Link: prodjet.in/join?ref=USR757</p>
+
+    <p>Referrals Joined: 0/3</p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
